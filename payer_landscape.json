@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "note": "Market-access and payer intelligence. The CMS coverage framework is grounded in CMS National Coverage Determination 200.3 (Monoclonal Antibodies Directed Against Amyloid for the Treatment of Alzheimer's Disease). Access archetypes and quantitative access assumptions are transparent modelling inputs, editable in the app. Internal decision-support only; not legal, reimbursement, or medical advice.",
+    "last_reviewed": "2026-07-02",
+    "grounding_source": "CMS NCD 200.3 (document id 375, effective 2022-04-07)"
+  },
+  "cms_coverage_framework": {
+    "policy": "National Coverage Determination 200.3",
+    "mechanism": "Coverage with Evidence Development (CED)",
+    "core_requirements": [
+      "Diagnosis of MCI due to AD or mild AD dementia, both with confirmed amyloid-beta pathology",
+      "Enrolment in a CMS-approved registry collecting real-world evidence",
+      "Care delivered by clinicians able to assess, diagnose, and manage the patient, with access to ARIA-appropriate MRI monitoring",
+      "Traditional (not accelerated) FDA approval broadens coverage relative to accelerated-approval agents"
+    ],
+    "strategic_implication": "CED is the single largest gate on US revenue realisation. Every eligible patient must pass through an amyloid-confirmed diagnosis, a registry-participating and MRI-capable site, and a payer pathway. Launch velocity is a function of site enablement and registry friction far more than of demand generation."
+  },
+  "payer_archetypes": [
+    {
+      "segment": "Medicare (fee-for-service)",
+      "share_of_target_population_assumption": 0.85,
+      "access_posture": "Covered under NCD 200.3 CED with registry participation",
+      "key_levers": ["Registry enablement", "Site-of-care readiness", "Diagnostic confirmation pathways"],
+      "friction": "Registry data entry burden; site MRI and specialist capacity"
+    },
+    {
+      "segment": "Medicare Advantage",
+      "share_of_target_population_assumption": 0.00,
+      "note": "Subset of the Medicare population above; plans follow NCD but may add utilization management",
+      "access_posture": "Follows NCD; variable prior-authorization and site steering",
+      "key_levers": ["Prior-auth support", "UM dossier", "Provider network alignment"],
+      "friction": "Prior authorization turnaround; step edits"
+    },
+    {
+      "segment": "Commercial / Employer",
+      "share_of_target_population_assumption": 0.10,
+      "access_posture": "Variable; medical-benefit coverage with prior authorization and medical-necessity criteria",
+      "key_levers": ["Value dossier / AMCP", "Outcomes-based contracts", "Total-cost-of-care narrative"],
+      "friction": "Heterogeneous criteria; annual formulary cycles"
+    },
+    {
+      "segment": "Medicaid",
+      "share_of_target_population_assumption": 0.05,
+      "access_posture": "State-variable; often restrictive with strict criteria",
+      "key_levers": ["State dossiers", "Supplemental rebates"],
+      "friction": "Budget constraints; restrictive PA"
+    }
+  ],
+  "value_based_contracting_options": [
+    "Outcomes-based agreement tied to functional decline (CDR-SB) milestones",
+    "Finite-duration payment model leveraging Kisunla's stop-after-clearance dosing to cap payer exposure",
+    "Diagnostic-linked contracting (coverage conditioned on confirmed amyloid + registry entry)",
+    "Site-of-care and infusion-cost bundling"
+  ],
+  "access_strategy_pillars": [
+    "Site enablement: accelerate registry onboarding, MRI scheduling, and infusion capacity at target centres",
+    "Diagnostic ecosystem: expand amyloid PET and plasma p-tau217 access to widen the top of the funnel",
+    "Total-cost-of-therapy narrative: convert limited-duration dosing into a payer-facing budget-predictability story",
+    "Real-world evidence: use CED registry data as an evidence asset for future coverage expansion and contracting"
+  ],
+  "ex_us_note": "Ex-US access (EMA/EU, Japan, UK NICE) follows separate HTA and reimbursement logic and is out of scope for this US-anchored model; flagged as a Phase-2/3-year roadmap workstream."
+}

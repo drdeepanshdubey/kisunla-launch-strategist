@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "note": "Grounded drug profile. Clinical/safety/regulatory fields are sourced from public data (ClinicalTrials.gov NCT04437511; Sims et al. JAMA 2023, DOI 10.1001/jama.2023.13239; CMS NCD 200.3; FDA). Commercial fields are transparent modelling inputs, editable in the app. This is an internal strategic decision-support artifact, NOT promotional material and NOT medical advice.",
+    "last_grounded": "2026-07-02",
+    "sources": [
+      "ClinicalTrials.gov NCT04437511 (TRAILBLAZER-ALZ 2)",
+      "Sims JR et al. JAMA 2023;330(6):512-527. DOI 10.1001/jama.2023.13239 (via PubMed)",
+      "CMS National Coverage Determination 200.3 (Monoclonal Antibodies Directed Against Amyloid for AD)",
+      "FDA traditional approval of Kisunla (donanemab-azbt), 2024-07-02"
+    ]
+  },
+  "brand_name": "Kisunla",
+  "inn": "donanemab-azbt",
+  "internal_code": "LY3002813",
+  "manufacturer": "Eli Lilly and Company",
+  "modality": "Humanized IgG1 monoclonal antibody targeting N3pG (pyroglutamate) amyloid-beta plaque",
+  "atc_class": "Anti-amyloid monoclonal antibody (disease-modifying AD therapy)",
+  "route": "Intravenous infusion, every 4 weeks (Q4W)",
+  "indication": "Early symptomatic Alzheimer's disease (MCI due to AD and mild AD dementia) with confirmed amyloid-beta pathology",
+  "fda_status": "Traditional (full) approval",
+  "fda_approval_date": "2024-07-02",
+  "pivotal_trial": {
+    "nct_id": "NCT04437511",
+    "name": "TRAILBLAZER-ALZ 2",
+    "phase": "Phase 3",
+    "design": "Randomized, double-blind, placebo-controlled, 18-month, 277 sites in 8 countries",
+    "n_total": 1736,
+    "n_donanemab": 860,
+    "n_placebo": 876,
+    "mean_age": 73.0,
+    "pct_women": 57.4,
+    "enrollment_innovation": "Tau-PET-based enrollment (low/medium vs high tau); amyloid + tau confirmation required",
+    "dosing_innovation": "Limited-duration dosing: patients switched to placebo once amyloid clearance criteria met",
+    "primary_endpoint": "Change in iADRS at 76 weeks (range 0-144, lower = worse)",
+    "gated_outcomes_significant": "23 of 24",
+    "efficacy": {
+      "iadrs_low_med_tau": {"donanemab": -6.02, "placebo": -9.27, "difference": 3.25, "relative_slowing_pct": 35},
+      "iadrs_combined": {"donanemab": -10.2, "placebo": -13.1, "difference": 2.92, "relative_slowing_pct": 22},
+      "cdrsb_low_med_tau": {"donanemab": 1.20, "placebo": 1.88, "difference": -0.67, "relative_slowing_pct": 36},
+      "cdrsb_combined": {"donanemab": 1.72, "placebo": 2.42, "difference": -0.70, "relative_slowing_pct": 29}
+    },
+    "safety": {
+      "aria_e_pct": 24.0,
+      "aria_e_symptomatic_n": 52,
+      "infusion_reactions_pct": 8.7,
+      "treatment_related_deaths": 3,
+      "boxed_warning": "Amyloid-related imaging abnormalities (ARIA); higher risk in APOE4 homozygotes",
+      "monitoring": "Serial MRI required before and during dosing; APOE4 genotyping recommended pre-treatment"
+    },
+    "citation": "Sims JR, et al. JAMA. 2023;330(6):512-527. DOI 10.1001/jama.2023.13239"
+  },
+  "differentiators": [
+    "Limited-duration therapy: dosing stops once amyloid is cleared, lowering cumulative cost and patient burden vs open-ended competitors",
+    "Q4W infusion schedule (vs competitor Q2W) - fewer infusion-center visits",
+    "Largest reported plaque clearance and a tau-stratified evidence base",
+    "Robust functional benefit signal (iADRS + CDR-SB both significant)"
+  ],
+  "liabilities": [
+    "ARIA safety burden requires MRI-capable sites and specialist oversight",
+    "Amyloid-confirmation diagnostic gate (PET/CSF/plasma) creates a funnel bottleneck",
+    "IV administration and infrastructure demands limit community-practice reach",
+    "APOE4 homozygote risk-benefit and genotyping add pre-treatment friction"
+  ],
+  "us_list_price_annual_usd": 32000,
+  "kol_advisors": [
+    {"name": "Stephen Salloway", "institution": "Alpert Medical School of Brown University / Butler Hospital", "role": "Anti-amyloid trials & ARIA safety authority"},
+    {"name": "Liana G. Apostolova", "institution": "Indiana University School of Medicine", "role": "AD diagnostics & imaging"},
+    {"name": "Oskar Hansson", "institution": "Lund University (Sweden)", "role": "Fluid & plasma biomarkers"},
+    {"name": "Paul Solomon", "institution": "Boston Center for Memory / Boston University", "role": "Clinical AD trials"},
+    {"name": "Craig Ritchie", "institution": "Scottish Brain Sciences (UK)", "role": "Early detection & prevention"}
+  ]
+}

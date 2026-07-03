@@ -1,0 +1,68 @@
+{
+  "_meta": {
+    "note": "Competitor and market-landscape intelligence. Kisunla clinical facts are connector-grounded (see kisunla_profile.json). COMPETITOR clinical/regulatory facts are compiled from public disclosures and general knowledge and are NOT connector-grounded in this build - verify against primary sources (CLARITY-AD publication, FDA label, company filings) before any real decision. All market-size, share, and pricing figures are transparent, editable modelling assumptions, not asserted facts.",
+    "last_reviewed": "2026-07-02",
+    "primary_competitor": "lecanemab (Leqembi, Eisai/Biogen)"
+  },
+  "market_context": {
+    "therapy_area": "Early symptomatic Alzheimer's disease (MCI due to AD + mild AD dementia)",
+    "market_stage": "Nascent, high-growth disease-modifying class (anti-amyloid mAbs); first meaningful DMTs after two decades of failures",
+    "growth_narrative": "Class-level growth is gated less by demand than by diagnostic capacity, MRI/infusion infrastructure, and payer access (CMS CED). Uptake has been slower than analyst consensus.",
+    "key_market_drivers": [
+      "Aging population and rising diagnosed-prevalence of early AD",
+      "Blood-based (plasma p-tau217) biomarkers lowering the diagnostic funnel cost",
+      "Traditional FDA approvals unlocking Medicare coverage under CED",
+      "Specialist and infusion-center capacity build-out"
+    ],
+    "key_market_barriers": [
+      "CMS Coverage-with-Evidence-Development registry requirement (NCD 200.3)",
+      "ARIA monitoring burden and MRI access",
+      "Amyloid-confirmation diagnostic funnel drop-off",
+      "APOE4 genotyping and risk counselling friction",
+      "Neurologist and dementia-specialist supply constraints"
+    ]
+  },
+  "market_sizing_assumptions_us": {
+    "_disclaimer": "ILLUSTRATIVE modelling inputs for scenario analysis - edit in the app. Not market research findings.",
+    "early_symptomatic_ad_population": 6500000,
+    "clinically_diagnosed_rate": 0.30,
+    "amyloid_confirmed_and_eligible_rate": 0.55,
+    "access_to_monitoring_site_rate": 0.50,
+    "payer_covered_rate": 0.70,
+    "anti_amyloid_treatment_penetration_at_maturity": 0.20,
+    "net_price_per_patient_year_usd": 22000,
+    "avg_treatment_duration_years": 1.5
+  },
+  "competitors": [
+    {
+      "brand_name": "Leqembi",
+      "inn": "lecanemab-irmb",
+      "manufacturer": "Eisai / Biogen",
+      "modality": "Humanized IgG1 mAb targeting amyloid-beta protofibrils",
+      "route": "IV every 2 weeks (Q2W); subcutaneous autoinjector maintenance (IQLIK) FDA-approved 2025 for weekly maintenance",
+      "fda_status": "Traditional approval",
+      "fda_approval_date": "2023-07-06",
+      "pivotal_trial": "CLARITY-AD (NCT03887455), Phase 3, N~1795, 18 months",
+      "headline_efficacy": "CDR-SB slowing ~27% vs placebo (difference approx -0.45); primary endpoint met",
+      "safety": "ARIA-E ~12.6%; boxed warning for ARIA; serial MRI monitoring; higher risk in APOE4 homozygotes",
+      "assumed_list_price_annual_usd": 26500,
+      "first_mover": true,
+      "strategic_notes": "First-to-market advantage, entrenched registry/site relationships, and an approved SC maintenance option that reduces infusion burden - a direct threat to Kisunla's convenience story."
+    }
+  ],
+  "kisunla_vs_leqembi": {
+    "_disclaimer": "Comparative framing for internal strategy. NOT a head-to-head trial; cross-trial comparisons are not statistically valid and must not be used promotionally.",
+    "dosing_frequency": {"kisunla": "Q4W IV", "leqembi": "Q2W IV / weekly SC maintenance"},
+    "treatment_duration": {"kisunla": "Limited-duration (stop after amyloid clearance)", "leqembi": "Continuous/open-ended maintenance"},
+    "primary_endpoint_basis": {"kisunla": "iADRS (co-primary CDR-SB)", "leqembi": "CDR-SB"},
+    "aria_e_rate": {"kisunla": "24.0%", "leqembi": "~12.6%"},
+    "amyloid_clearance": {"kisunla": "Largest reported plaque reduction", "leqembi": "Substantial reduction"},
+    "differentiation_thesis": "Compete on total-cost-of-therapy and patient burden (finite dosing, fewer visits) rather than on a raw efficacy or safety claim; neutralise Leqembi's first-mover and SC-convenience advantages via value-based contracting and site enablement."
+  },
+  "pipeline_and_disruptors": [
+    "Subcutaneous / at-home anti-amyloid delivery lowering infusion dependence",
+    "Blood-based diagnostics (plasma p-tau217) collapsing the diagnostic funnel",
+    "Next-generation and combination amyloid/tau agents",
+    "Potential prevention/secondary-prevention indications expanding earlier populations"
+  ]
+}
