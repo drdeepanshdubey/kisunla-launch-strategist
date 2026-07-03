@@ -183,4 +183,4 @@ def get_openrouter_key() -> str | None:
     return os.environ.get("OPENROUTER_API_KEY")
 
 
-DEFAULT_MODEL = os.environ.get("OPENROUTER_MODEL", "anthropic/claude-3.5-sonnet")
+DEFAULT_MODEL = os.environ.get("OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct")
